@@ -1,11 +1,5 @@
 import React, { Component } from "react";
-import {
-  View,
-  Text,
-  StyleSheet,
-  ScrollView,
-  TouchableHighlight
-} from "react-native";
+import { View, Text, StyleSheet, ScrollView, TouchableHighlight } from "react-native";
 
 const styles = StyleSheet.create({
   container: {
@@ -54,7 +48,7 @@ export default class Main extends Component {
     ];
     return (
       <ScrollView contentContainerStyle={styles.container}>
-        {months.map(month => {
+        {months.map(month, index => {
           return (
             <TouchableHighlight
               key={month}
@@ -66,6 +60,7 @@ export default class Main extends Component {
             </TouchableHighlight>
           );
         })}
+        <Modal />
       </ScrollView>
     );
   }
