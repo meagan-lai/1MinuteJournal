@@ -10,7 +10,7 @@ export default class Habits extends Component {
   render() {
     return (
       <View>
-        <Text> textInComponent </Text>
+        <Text> textInComponent </Text>f
       </View>
     );
   }
