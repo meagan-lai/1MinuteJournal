@@ -28,14 +28,15 @@ export default class Choice extends Component {
   }
 
   moodPicked() {
-    const month = this.props.navigation.state.params.month.month;
+    const month = this.props.navigation.state.params.month;
     let monthMoodObj;
     moods.forEach(moodObj => {
       if (moodObj.month == month) {
         monthMoodObj = moodObj;
       }
     });
-    //this.props.navigation.navigate("")
+
+    this.props.navigation.navigate("MoodTracker", { month: month });
   }
 
   render() {
