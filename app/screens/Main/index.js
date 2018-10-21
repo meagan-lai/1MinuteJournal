@@ -68,7 +68,7 @@ export default class Main extends Component {
           return (
             <TouchableHighlight
               key={month}
-              onPress={/*this.monthPressed*/ () => navigate("Choice", { month: { month } })}
+              onPress={/*this.monthPressed*/ () => navigate("Choice", { month: month })}
               underlayColor="blue"
               style={styles.buttons}
             >

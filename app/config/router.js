@@ -10,7 +10,7 @@ const RootStack = createStackNavigator(
   {
     MainView: Main,
     Choice: Choice,
-    Moods: MoodTracker
+    MoodTracker: MoodTracker
   },
   {
     initialRouteName: "MainView"
