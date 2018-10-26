@@ -5,15 +5,17 @@ import { createStackNavigator } from "react-navigation"; // Version can be speci
 import Main from "../screens/Main";
 import Choice from "../screens/Choice";
 import MoodTracker from "../screens/MoodTracker";
+import CoolLogin from "../screens/CoolLogin";
 
 const RootStack = createStackNavigator(
   {
     MainView: Main,
     Choice: Choice,
-    MoodTracker: MoodTracker
+    MoodTracker: MoodTracker,
+    CoolLogin: CoolLogin
   },
   {
-    initialRouteName: "MainView"
+    initialRouteName: "CoolLogin"
   }
 );
 
